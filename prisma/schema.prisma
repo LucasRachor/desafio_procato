@@ -11,7 +11,7 @@ datasource db {
 }
 
 model Message {
-  id      Int    @id @default(autoincrement())
+  id      Int    @id @unique @default(autoincrement())
   phone   String
   message String
   status  Status?
@@ -22,5 +22,5 @@ model Message {
 enum Status {
   ENVIADO
   RECEBIDO
-  ERRO_DE_ENVIO
+  ERRO_DE_ENVIO @map("ERRO DE ENVIO")
 }
