@@ -14,7 +14,7 @@ model Message {
   id      Int    @id @default(autoincrement())
   phone   String
   message String
-  status  Status
+  status  Status?
 
   @@map("sms_messages")
 }

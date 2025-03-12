@@ -1,5 +1,5 @@
 import { Status } from '@prisma/client'
-import { IsNotEmpty, IsNumber, IsString } from 'class-validator'
+import { IsNotEmpty, IsNumber } from 'class-validator'
 
 export class UpdateMessageDto {
     @IsNumber()
